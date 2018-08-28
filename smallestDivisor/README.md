@@ -1,4 +1,5 @@
-# project Brain Games
+# Educational Tasks
+
 
  ## Описание
 ```
