@@ -1,14 +1,11 @@
-const fizzBuzz = (begin, end) => {
-  for (let i = begin; i <= end; i += 1) {
-    if (i % 3 === 0 && i % 5 !== 0) {
-      console.log('Fizz');
-    } else if (i % 5 === 0 && i % 3 !== 0) {
-      console.log('Buzz');
-    } else if (i % 5 === 0 && i % 3 === 0) {
-      console.log('FizzBuzz');
-    } else {
-      console.log(i);
+const sumSquareDifference = (n) => {
+  let kvSum = 0;
+  let sumKv = 0; 
+    for (let i = 1; i <= n; i += 1) {
+      sumKv += Math.pow(i, 2);
+      kvSum += i; 
+      //console.log(sumKv);
     }
-  }
-};
-export default fizzBuzz;
+  return(Math.pow(kvSum, 2) - sumKv); 
+}
+export default sumSquareDifference;
